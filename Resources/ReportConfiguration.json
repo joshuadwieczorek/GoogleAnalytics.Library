@@ -1,0 +1,123 @@
+[
+  {
+    "Name": "PageTrackingReportDaily",
+    "Filter": "",
+    "Schedule": "ScheduledDaily",
+    "DatabaseTable": "raw.PageTrackingReportDaily",
+    "Dimensions": [
+      {
+        "Name": "sourceMedium"
+      },
+      {
+        "Name": "pagePath"
+      },
+      {
+        "Name": "channelGrouping"
+      },
+      {
+        "Name": "campaign"
+      },
+      {
+        "Name": "deviceCategory"
+      }
+    ],
+    "Metrics": [
+      {
+        "Name": "PageViews",
+        "Expression": "pageviews",
+        "Type": "INTEGER"
+      },
+      {
+        "Name": "UniquePageViews",
+        "Expression": "uniquepageviews",
+        "Type": "INTEGER"
+      },
+      {
+        "Name": "AvgTimeOnPage",
+        "Expression": "avgTimeOnPage",
+        "Type": "TIME"
+      },
+      {
+        "Name": "EntranceRate",
+        "Expression": "entranceRate",
+        "Type": "PERCENT"
+      },
+      {
+        "Name": "ExitRate",
+        "Expression": "exitRate",
+        "Type": "PERCENT"
+      },
+      {
+        "Name": "BounceRate",
+        "Expression": "bounceRate",
+        "Type": "PERCENT"
+      },
+      {
+        "Name": "TimeOnPage",
+        "Expression": "timeOnPage",
+        "Type": "TIME"
+      }
+    ]
+  },
+  {
+    "Name": "PageTrackingReportMonthly",
+    "Filter": "",
+    "Schedule": "ScheduledMonthly",
+    "DatabaseTable": "raw.PageTrackingReportMonthly",
+    "Dimensions": [
+      {
+        "Name": "sourceMedium",
+        "DataExtractor": ""
+      },
+      {
+        "Name": "pagePath"
+      },
+      {
+        "Name": "channelGrouping"
+      },
+      {
+        "Name": "campaign"
+      },
+      {
+        "Name": "deviceCategory"
+      }
+    ],
+    "Metrics": [
+      {
+        "Name": "PageViews",
+        "Expression": "pageviews",
+        "Type": "INTEGER"
+      },
+      {
+        "Name": "UniquePageViews",
+        "Expression": "uniquepageviews",
+        "Type": "INTEGER"
+      },
+      {
+        "Name": "AvgTimeOnPage",
+        "Expression": "avgTimeOnPage",
+        "Type": "TIME"
+      },
+      {
+        "Name": "EntranceRate",
+        "Expression": "entranceRate",
+        "Type": "PERCENT"
+      },
+      {
+        "Name": "ExitRate",
+        "Expression": "exitRate",
+        "Type": "PERCENT"
+      },
+      {
+        "Name": "BounceRate",
+        "Expression": "bounceRate",
+        "Type": "PERCENT"
+      },
+      {
+        "Name": "TimeOnPage",
+        "Expression": "timeOnPage",
+        "Type": "TIME"
+      }
+    ]
+  }
+]
